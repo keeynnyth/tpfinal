@@ -1,0 +1,37 @@
+.section1{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+ 
+    
+
+}
+
+
+.producto:hover{
+    
+    cursor:crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    border: solid 1px yellow;
+
+    
+}
+
+.hablemos{
+    background-color:rgba(175, 175, 89, 0.508);
+    border-radius: 5%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}

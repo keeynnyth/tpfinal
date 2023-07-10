@@ -1,0 +1,182 @@
+<section class="section1">
+    <img
+      class="imagenCentro"
+      src="./imagenes/Sé tu mejor.jpg"
+      width="100px"
+      alt=""
+    />
+    <img class="segundaIm" src="imagenes/27652340.svg" alt="">
+    <img class="terceraI" src="./imagenes/pexels-bk-aguilar-945471.jpg" alt="">
+
+  </section>
+
+  <section class="hablemos">
+    <h3>Mide tu IMC!</h3>
+    <br />
+    <form action="">
+      <label for="txtNombre"></label>Nombre<input id="txtNombre" type="text" placeholder="Ingrese su nombre" required>
+      <label for="txtPeso">Peso</label><input id="txtPeso" type="number" placeholder="Ingrese su peso" required>
+      <label for="txtAltura">Estatura</label><input id="txtAltura" type="tex" placeholder="su estatura ej. 1.70" required>
+      <button id="btnCalcular">Calcular</button>
+   
+
+    </form>
+  </section>
+
+  <section class="animacion">
+    <img
+      src="./imagenes/fitness-is-something-you-attain-and-maintain-royalty-free-image-1574683281.jpg"
+      alt=""
+    />
+
+    <img src="./imagenes/inst.jpeg" alt="" />
+    <img
+      src="./imagenes/instructores-personales-del-hombre-y-de-la-mujer-en-el-gimnasio-83479037.jpg"
+      alt=""
+    />
+    <img src="./imagenes/perso.jpeg" alt="" />
+  </section>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Barberia Alura</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="../html2/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="./imagenes/logo.png" alt="Logo de la Berberia Alura" /></h1>
+        <nav>
+          <ul>
+            <li><a href="../html1/index.html">Home</a></li>
+            <li><a href="productos.css">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form action="">
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required />
+
+        <label for="correoelectronico">Correo Electronico</label>
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
+
+        <label for="telefono">Telefono</label>
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(xx) xxxx xxx"
+        />
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="70"
+          rows="10"
+          class="input-padron"
+          required
+        ></textarea>
+
+        <fieldset>
+          <legend>Como le gustaria que lo contactemos</legend>
+
+          <label for="radio-email">
+            <input
+              type="radio"
+              value="email"
+              name="contacto"
+              id="radio-email"
+            />
+            Email</label
+          >
+
+          <label for="radio-telefono"
+            ><input
+              type="radio"
+              value="telefono"
+              name="contacto"
+              id="radio-telefono"
+            />
+            Telefono</label
+          >
+
+          <label for="radio-whatsapp">
+            <input
+              type="radio"
+              value="email"
+              name="contacto"
+              id="radio-whatsapp"
+              checked
+            />
+            Whatsapp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>En cual Horario prefiere ser atendido?</legend>
+          <select name="" id="">
+            <option value="">Manana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
+
+        <label for="" class="checkbox">
+          <input type="checkbox" name="" id="" checked />Le gustaria recibir
+          novedades de la Barberia Alura?</label
+        >
+
+        <input type="submit" value="Enviar formulario" class="enviar" />
+      </form>
+      <table>
+        <thead>
+         
+        <tr>
+          <th>Dia</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td>08h - 20h</td>
+        </tr>
+
+
+        <tr>
+          <td>Miercoles</td>
+          <td>08h - 20h</td>
+        </tr>
+
+        <tr>
+          <td>Viernes</td>
+          <td>08h - 20h</td>
+        </tr>
+      </tbody>
+      </table>
+
+    </main>
+
+    <footer>
+      <img src="./imagenes/logo-blanco.png" alt="Logo de la Berberia Alura" />
+      <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
+    </footer>
+  </body>
+</html>

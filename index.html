@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODO GYM</title>
+    <link rel="stylesheet" href="./estiloTP.css" />
+   
+    <link
+      rel="shortcut icon"
+      href="./imagenes/Diseño sin título.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat:ital,wght@0,400;0,700;1,300&family=Open+Sans:wght@300;400;700&family=Righteous&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script
+      src="https://kit.fontawesome.com/c1952e4016.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="dark.css">
+
+
+  </head>
+
+  <body>
+    <audio
+      src="./audio/Eye Of The Tiger - Survivor (Lyrics) 🎵 (online-video-cutter.com) (3).mp4"
+      autoplay
+      muted
+    ></audio>
+    <header>
+      <div class="head">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="./imagenes/31292430_transparent (1).png"
+            alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <a href="index.html">Planes</a>
+        <a href="contactoGYM.html">Contacto</a>
+        <a href="sucursales.html">Sucursales</a>
+        <!--
+        <ul class="nav-links">
+          <li><a href="index.html">Productos</a></li>
+          <li><a href="contactoGYM.html">Contacto</a></li>
+          <li><a href="sucursales.html">Sucursales</a></li>
+          <li> <a href="planes.html">Planes</a></li>
+        -->
+         
+          <!--<li>
+            <button class="switchDark active" id="switch">
+              <span><img src="./imagenes/bxs-sun (1).svg" alt=""></span>
+              <span><img src="./imagenes/bxs-moon.svg" alt=""></span>
+          </li>
+      </ul>
+      <button class="ham" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button> 
+      -->
+      </nav>
+    </header>
+    <main>
+      <h1>SÉ TU MEJOR VERSIÓN!</h1>
+      <p class="primerP">
+        Estamos comprometidos con la excelencia y la calidad. Nuestra sala
+        fitness cuenta con las mejores máquinas de gimnasio del sector,
+        adaptándonos siempre a las últimas tendencias. El espíritu de equipo y
+        el aprendizaje continuo son dos de nuestros grandes pilares dentro de
+        nuestra filosofía de trabajo. Valores que hemos interiorizado como
+        propios y queremos transmitir a todas las personas que conforman la
+        comunidad del gimnasio Pa Lante Gym.
+      </p>
+      <h2 class="segundoTitulo">Lo que te ofrecemos</h2>
+      <div class="contenedor">
+        <div class="producto">
+          <img src="./imagenes/inst.jpeg" alt="producto" />
+          <div class="textocard">
+            <h2>Modernas y comodas instalaciones</h2>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img src="./imagenes/perso.jpeg" alt="producto" />
+          <div class="textocard">
+            <h2>Entrenamientos personalizados</h2>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="./imagenes/entrenamiento-fuerza-clase-colectiva-gimnasio_103.webp"
+            alt="producto"
+          />
+          <div class="textocard">
+            <h2>Clases para todos los gusto y necesidades!</h2>
+          </div>
+        </div>
+
+        <div class="producto">
+          <img
+            src="./imagenes/instructores-personales-del-hombre-y-de-la-mujer-en-el-gimnasio-83479037.jpg"
+            alt="producto"
+          />
+          <div class="textocard">
+            <h2>Los mejores profesionales certificados a tu disposicion!</h2>
+          </div>
+        </div>
+      </div>
+
+      
+   
+    <section class="section2">
+     
+      <div class="imc">
+        <h2 class="hcalcula" >Calcula tu IMC!</h2>
+        <p>(indice de masa corporal)</p>
+      <div class="altura">
+        <label for="altura">Altura (M)</label>
+        <input
+          type="number"
+          id="altura"
+          name="altura"
+          min="0"
+          max="300"
+          step="0.1"
+          placeholder="Ingrese su altura, por ej 1.68"
+        required/>
+      </div>
+      <div class="peso">
+        <label for="peso">Peso (Kg)</label>
+        <input
+          type="number"
+          id="peso"
+          name="peso"
+          min="0"
+          max="500"
+          step="0.1"
+          placeholder="Ingrese su peso"
+        required/>
+      </div>
+      <div class="botonC">
+        <button id="botonC" type="button" onclick="calcularIMC()">
+          Calcular
+        </button>
+      </div>
+      <span id="resultado"></span>
+    </div>
+
+    <div class="noticias">
+      <h2 class="tnoticias">Noticias y articulos de interes</h2>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0025775303740548">
+        <h3 class="not">-Beneficios de la actividad fisica</h3>
+      </a>
+      <a href="https://www.sciencedirect.com/science/article/pii/S0716864012703036">
+        <h3 class="not">-Actividad Fisica: pasaporte para la salud</h3>
+      </a>
+      <a href="https://www.cancer.org/es/cancer/noticias-recientes/5-beneficios-del-entrenamiento-con-pesas.html">
+        <h3 class="not">-5 Beneficos del entrenamiento con pesas</h3>
+      </a>
+      <a href="https://www.bbc.com/mundo/noticias/2016/05/160512_deportes_en_forma_levantar_pesas_resistencia_salud_positivo_jmp">
+        <h3 class="not">-Por que levantar pesas?</h3>
+      </a>
+      <a href="https://obesidadlopeznava.com/obesidad-y-sobrepeso-por-la-oms/"><h3>-Obesidad y sobrepeso segun la OMS</h3></a>
+
+    </div>
+   
+  </section>
+
+
+    <div class="unete"><a id="boton" href="contactoGYM.html">ÚNETE HOY</a></div>
+
+      <div class="iconos">
+        <a class="icon" href="https://www.instagram.com/">
+          <img src="./imagenes/instagram (1).png" width="40px" alt="email" />
+        </a>
+        <a href="https://twitter.com/?lang=es">
+          <img src="./imagenes/twitter.png" width="40px" alt="" />
+        </a>
+       
+      </div>
+      <a class="what" href="https://api.whatsapp.com/send?phone">
+        <img src="./imagenes/whatsapp (1).png" width="40px" alt="" /></a
+      >
+    </main>
+    <footer>
+      <p>Codigo pa lante</p>
+      <p>
+        <small
+          >&copy;2023 <b>Proyecto CODIGO PA LANTE</b>-Todos los derechos
+          reservados</small
+        >
+      </p>
+    </footer>
+    <script src="./tp.js"></script>
+  </body>
+</html>
